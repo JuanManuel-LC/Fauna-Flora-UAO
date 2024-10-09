@@ -1,0 +1,12 @@
+.texto-container {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20%;
+    height: 700px;
+    background-image: url(/src/img/lombrices/lombriz1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -900px 0 200px rgb(66, 5, 7); /* Sombra interior en el lado derecho */
+}

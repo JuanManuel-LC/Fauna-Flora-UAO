@@ -9,11 +9,109 @@
             integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
             crossorigin=""
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.awesome-markers/2.0.4/leaflet.awesome-markers.css"
+        />
+        <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
         <title>Mapa UAO</title>
     </head>
     <body>
-        <div id="map"></div>
+        <!-- Header -->
+        <header>
+            <nav class="navbar">
+                <div class="titulo-container">
+                    <h1 class="titulo-bar">Bio UAO</h1>
+                </div>
+                <div class="links-container">
+                    <ul class="lista">
+                        <li class="item">
+                            <a href="pages/caballos.html">Caballos</a>
+                        </li>
+                        <li class="item">
+                            <a href="pages/lombrices.html">Lombrices</a>
+                        </li>
+                        <li class="item">
+                            <a href="pages/azucena.html">Azucena</a>
+                        </li>
+                        <li class="item">
+                            <a href="pages/enredadera.html">Enredadera</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Texto inicial -->
+        <section class="texto">
+            <div class="texto-container">
+                <h1 class="titulo">
+                    Descubre la Biodiversidad del Campus UAO - Proyecto COP16
+                </h1>
+                <p class="texto-titulo-descripcion">
+                    La UAO es más que un espacio académico, es un ecosistema
+                    natural vibrante donde convergen diversas especies de flora
+                    y fauna. Con esta aplicación podrás explorar las especies
+                    que habitan nuestro campus y descubrir su importancia para
+                    la biodiversidad.
+                </p>
+                <img src="" alt="" />
+            </div>
+        </section>
+
+        <!-- Descripcion -->
+        <section class="des-padre">
+            <div class="imagen-logo-UAO">
+                <img src="src/img/icon/Logo_UAO.svg.png" alt="logo-uao" />
+            </div>
+            <div class="descripcion-container">
+                <h2 class="titulo-descripcion titulos">Sobre el Proyecto</h2>
+                <p class="descripcion">
+                    Este proyecto fue desarrollado por estudiantes del curso
+                    <strong>Arquitectura de Sistemas Multimedia</strong> de la
+                    Universidad Autónoma de Occidente. La aplicación tiene como
+                    objetivo dar a conocer la biodiversidad presente en el
+                    campus, ofreciendo a los usuarios la posibilidad de
+                    visualizar las especies de flora y fauna que coexisten en
+                    nuestra universidad.<br />
+                    La aplicación se creó en el contexto de la COP16, una cumbre
+                    de las Naciones Unidas sobre la biodiversidad. Utilizando
+                    tecnología adaptativa y recursos multimedia como textos,
+                    imágenes, videos y audios, se ofrece una experiencia de
+                    aprendizaje y exploración accesible desde cualquier
+                    dispositivo.
+                </p>
+            </div>
+        </section>
+
+        <section class="mapas-container">
+            <div class="mapa-relieve-container">
+                <div class="descripcion-mapa">
+                    <h2 class="titulos">Mapa de relieve</h2>
+                    <p>
+                        Este mapa en relieve muestra una representación visual
+                        detallada del campus de la UAO. Aunque es una imagen
+                        estática, ofrece una vista clara del terreno y de la
+                        distribución geográfica de los puntos de interés.
+                    </p>
+                </div>
+                <img src="src/img/UAO/UAO up.png" alt="Mapa de relieve" />
+            </div>
+            <div class="mapa-interactivo-container">
+                <div id="map"></div>
+                <div class="descripcion-mapa">
+                    <h2 class="titulos">Mapa interactivo</h2>
+                    <p>
+                        Utilizando tecnología interactiva de Leaflet, este mapa
+                        permite a los usuarios explorar el campus de manera
+                        dinámica. Con la opción de hacer zoom y clic en los
+                        marcadores, se puede acceder a información detallada
+                        sobre las especies presentes en cada ubicación.
+                    </p>
+                </div>
+            </div>
+        </section>
 
         <script
             src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
